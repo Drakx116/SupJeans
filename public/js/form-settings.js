@@ -1,0 +1,10 @@
+$("#same").change(function(){
+    if($(this).prop("checked"))
+    {
+        $("#delivery-container").hide();
+    }
+    else
+    {
+        $("#delivery-container").show();
+    }
+});

@@ -1,0 +1,214 @@
+.navbar {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border-bottom: 2px solid #ff9f1c;
+}
+
+.navbar-container {
+    width: 75%;
+    margin: auto;
+}
+
+.navbar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px 0;
+}
+
+.navbar-header {
+    display: none;
+}
+
+.navbar-brand {
+    margin: auto;
+    display: inline-block;
+}
+
+.navbar-toggle-button {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.navbar-items {
+    padding: 0;
+}
+
+.navbar-items {
+    display: block;
+    padding: 32px 0;
+}
+
+.navbar-left-content, .navbar-right-content, .navbar-form {
+    display: inline;
+}
+
+.navbar-right-content {
+    float: right;
+}
+
+#brand, .navbar-items a {
+    font-family: "Playfair Display", sans-serif;
+    font-size: 1.3em;
+    padding: 16px 0 ;
+    text-decoration: none;
+    color: #000;
+}
+
+#brand {
+    font-family: "Contrail One", sans-serif;
+    font-weight: bold;
+    font-size: 2.5em;
+}
+
+#brand, #toggle-btn {
+    color: #ff9f1c;
+}
+
+.navbar a:hover {
+    color: #505050;
+}
+
+.navbar-left-content a, .navbar-right-content a {
+    padding: 0 16px;
+}
+
+.navbar-left-content a:hover, .navbar-right-content a:hover {
+    color: #505050;
+}
+
+.navbar-left-content a:nth-child(1) {
+    padding-left: 0;
+}
+
+.navbar-form > input[type="text"]  {
+    width: 160px;
+    padding-left: 16px;
+    font-family: "Playfair Display", sans-serif;
+    font-size: 1.3em;
+    border: 0;
+    border-left: 2px solid #ff9f1c;
+    color: #050505;
+}
+
+.navbar-form > input[type="text"]:invalid  {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.navbar-form > button[type="submit"]  {
+    width: 40px;
+    padding: 4px;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    border: 0;
+    color: #ff9f1c;
+    background-color: transparent;
+    cursor: pointer;
+    margin-right: 24px;
+}
+
+#icon {
+    color: #050505;
+}
+
+#icon:hover {
+    color: #505050;
+}
+
+#logout {
+    color: #a8201a;
+}
+
+#cart {
+    font-family: "Montserrat";
+    font-weight: bolder;
+}
+
+.text-description {
+    margin-left: 12px;
+}
+
+.btn-description {
+    display: none;
+}
+
+.navbar-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .navbar-container {
+        width: 80%;
+    }
+
+    .navbar-header {
+        display: flex;
+    }
+
+    .navbar-toggle-button {
+        display: flex;
+    }
+
+    .navbar-brand {
+        margin: 0;
+    }
+
+    .navbar-items {
+        display: none;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .navbar-right-content, .navbar-right-content, .navbar-form {
+        display: block;
+        float: none;
+    }
+
+    .navbar-left-content a, .navbar-right-content  a, .navbar-form{
+        display: block;
+        margin-top: 32px;
+        padding-left: 0;
+    }
+
+    .navbar-left-content a:nth-child(1) {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .navbar-right-content > .last {
+        margin-bottom: 32px;
+    }
+
+    .navbar-form > input[type="text"] {
+        padding: 4px 16px;
+        width: 70%;
+    }
+
+
+    .navbar-form > button[type="submit"] {
+        float: right;
+        width: auto;
+        margin: 0;
+    }
+
+    .btn-description {
+        display: inline;
+        margin-left: 12px;
+    }
+
+    .navbar-icon {
+        display: inline;
+        padding-right: 12px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .navbar-container {
+        width: 85%;
+    }
+}

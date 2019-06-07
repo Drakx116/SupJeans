@@ -1,0 +1,39 @@
+input[type=radio]{
+    display: none;
+}
+
+input[type=radio] + label {
+    margin-right: 32px;
+    cursor: pointer;;
+}
+
+input[type=radio] + label:before {
+    background: #fff;
+    border: 1px solid #050505;
+    border-radius: 2em;
+    margin-top: -6px;
+    margin-left: 4px;
+    margin-right: 4px;
+    display: inline-block;
+    vertical-align: middle;
+    align-content: center;
+    content: '';
+    width: 10px;
+    height: 10px;
+}
+
+input[type=radio]:checked + label:before {
+    -webkit-transition: ease-out 0.2s;
+    -moz-transition: ease-out 0.2s;
+    -ms-transition: ease-out 0.2s;
+    -o-transition: ease-out 0.2s;
+    transition: ease-out 0.2s;
+    background: #ff9f1c;
+    border-color: #ff9f1c;
+}
+
+@media only screen and (max-width: 768px) {
+    input[type=radio] + label:before {
+        margin: 10px 20px;
+    }
+}
