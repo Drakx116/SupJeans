@@ -7,16 +7,12 @@ class SearchController
 
     public function __construct($url)
     {
-
-
         if(isset($_POST["validateSearch"]))
         {
             if(isset($_POST["search"])) {
                 header("Location: " . URL . "search/". $_POST["search"]);
             }
         }
-
-
         $this->_view = new View($url[0]);
         if(!(empty($url[1])))
         {

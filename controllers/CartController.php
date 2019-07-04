@@ -9,9 +9,14 @@ class CartController
 
         if(isset($_COOKIE["SupJeans_Cart"]))
         {
-            if(isset($_POST["drain_cart"]))  { $this->delete_all(); }
-
-            if(isset($_POST["delete_article"]))  { $this->delete_article(); }
+            if(isset($_POST["drain_cart"])) 
+            {
+                $this->delete_all();
+            }
+            if(isset($_POST["delete_article"]))
+            { 
+                $this->delete_article(); 
+            }
         }
 
         $this->_view = new View($url[0]);

@@ -71,7 +71,6 @@ class ArticleController
     private function addArticleToCart($content, $pos)
     {
         $cookieName = "SupJeans_Cart[" . $pos . "]";
-        echo "Création du Cookie à l'index " . $pos;
         setcookie($cookieName, serialize($content), time() + 3600, "/");
     }
 

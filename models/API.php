@@ -12,7 +12,7 @@ abstract class API
     {
         self::$_dsn = 'mysql:host=localhost;dbname=api_supjeans;';
         self::$_name = 'root';
-        self::$_password = 'a256le8VvbRc5jD4';
+        self::$_password = '';
         self::$_database = new PDO(self::$_dsn, self::$_name, self::$_password);
         self::$_database->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
     }
